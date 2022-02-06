@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.blackbackground-headphone-image{
+
+ background-color: #191919;
+ height: 83vh;
+ width:100%;
+ background-image: url(/images/mobile/image-header.jpg);
+ background-size: cover;
+ background-position: bottom center;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.megatron-text-container {
+ color: #fff;
+ font-family: 'Manrope', sans-serif;
+ text-align: center;
+ height: 58%;
+ width: 80%;
+  
+ 
+}
+.intro-text{
+ font-weight: 400;
+ font-size: 14px;
+ line-height:19px;
+ letter-spacing:12px;
+ opacity: 0.5;
+ padding-top: 2rem;
+ padding-bottom: 1rem;
+}
+.leading-text{
+ font-weight: 700;
+ font-size:36px;
+ letter-spacing:2.5px;
+ line-height: 40px;
+ width: 328px;
+ margin: auto;
+ padding-bottom: 1rem;
+}
+.sub-text{
+ font-size: 15px;
+ font-weight: 400;
+ line-height: 30px;
+ opacity:.65;
+ padding: 1rem 3rem;
+ 
+}
+.homepage-button{
+ width: 160px;
+ height:48px;
+ border: 1px solid transparent;
+ background-color: #D87D4A;
+ font-size: 13px;
+ font-weight: bold;
+ line-height: 18px;
+ color: #fff;
+ letter-spacing: 1px;
+
+}
+.product-preview{
+ background-color: #FFF;
+ text-align: center;
+ padding-top: 3rem;
+ position: relative;
+ margin-top:30px;
+}
+.product-preview img{
+  object-fit: contain;
+ display: block;
+ position: absolute
+}
+
+.preview-containers{
+ width:90%;
+ height: 185px;
+ margin-right: auto;
+ margin-left: auto;
+ margin-bottom: 7rem;
+ background-color:#F2F2F2; 
+ border-radius:8px;
+ 
+}
+.preview-headers{
+ padding-top: 88px;
+}
+.headphones{
+ width: auto;
+ height:130px;
+ bottom: 75%;
+ bottom: 84%;
+ left: 38%;
+ 
+}
+.speakers{
+ width: auto;
+ height:170px;
+ bottom: 48%;
+ left:33%;
+
+}
+.earphones{
+ width: auto;
+ height: 150px;
+ bottom: 15%;
+ left: 35%;
+ 
+}
+.preview-headers{
+ font-weight: bold;
+ font-size:15px;
+ line-height: 20px;
+ text-align: center;
+ color:#000;
+ letter-spacing:2px;
+}
+.preview-anchor{
+ font-weight: bold;
+ font-size: 13px;
+ line-height:18px;
+ letter-spacing: 1px;
+ font-style: normal;
+ opacity: 0.5;
+ color:#000;
+ text-decoration: none;
+ 
+}
+.preview-anchor span{
+ color: #ce520a;
+ opacity: 1;
+}
+.home-page-product-action-page{
+ height:90vh;
+ width:90%;
+ margin: 2rem auto;
+ position:relative;
+ overflow: hidden;
+ text-align: center;
+ background-color: #D87D4A;
+ border-radius: 8px;
+}
+.product-page-speaker{
+ height:420px;
+ width: auto;
+ 
+}
+.outermost-circle{
+ width: 430px;
+ height: 430px;
+ border-radius: 50%;
+ border: 1px solid rgba(241, 240, 239, 0.2);
+ position: absolute;
+ right: 1%;
+ left:1%;
+ text-align: center;
+}
+.inner-circle {
+ width: 380px;
+ height: 380px;
+  border-radius: 50%;
+ border: 1px solid rgba(241, 240, 239, 0.2);
+ margin: 20px auto;
+ 
+}
+.home-page-product-page{
+ font-weight:500;
+ font-size:40px;
+ line-height: 50px;
+ letter-spacing:2px;
+ color: #fff;
+ text-align: center;
+ padding: 0 100px;
+ margin: 0 auto;
+}
+.home-page-product-page-subtext{
+ font-weight: 500;
+ font-size:15px;
+ opacity: .7;
+ line-height: 25px;
+ color: #fff;
+ padding:0 40px;
+}
+.product-page-button{
+ width: 160px;
+ height:48px;
+ background-color: #000;
+ color: #fff;
+ font-weight: 500;
+ font-size:13px;
+ line-height: 17px;
+ border: 1px solid transparent;
+
+}
+.zx7-speaker-products{
+ background-image: url(/images/mobile/image-speaker-zx7.jpg);
+ height: 40vh;
+ background-position:center;
+ background-repeat:no-repeat;
+ background-size: 100%;
+ width:90%;
+ margin:auto;
+ object-fit: contain;
+ border-radius: 8px;
+}
+.zx7-speaker{
+ font-size:2rem;
+ line-height:38px;
+ letter-spacing: 2px;
+ font-weight:500;
+ color:#000;
+ padding-top:20%;
+ padding-left: 5%;
+ padding-bottom:6%;
+}
+.zx7-button{
+ width: 180px;
+ height: 50px;
+ margin-left: 5%;
+ font-weight:700;
+ font-size: 13px;
+ border: 1px solid black;
+ background-color:transparent;
+}
+.black-earphones-case-picture{
+ width:90%;
+ display:block;
+ margin:30px auto;
+ border-radius: 9px;
+
+}
+.yx1-earphone-card {
+ background-color:#F1F1F1; 
+ height: 230px;
+ width: 90%;
+ margin:0 auto;
+ border-radius: 9px;
+ border-bottom: 20px;
+}
+.yx1-header{
+ font-weight: 500;
+ font-size:2rem;
+ letter-spacing: 2px;
+ padding-top:15%;
+ padding-left: 5%;
+ padding-bottom:6%;
+
+}
+.yx1.see-product-button{
+ width: 180px;
+ height: 48px;
+ color:#000;
+ margin-left: 5%;
+ font-weight: 500;
+ letter-spacing: 1px;
+ border: 1px solid #000;
+}
+.home-page-man-picture
+{
+ width: 90%;
+ margin: 6rem auto;
+ border: 1px solid transparent !important;
+ align-items: center;
+ 
+}
+.card-img-top{
+ border-radius: 9px;
+}
+.content-header{
+ font-size: 2rem;
+ font-weight: 500;
+ line-height: 42px;
+ text-align: center !important;
+ padding: 1rem 2rem;
+ color: #000000;
+
+
+}
+.content-header span{
+ color: #D87D4A;
+}
+.content-text{
+ text-align: center;
+ font-size: 16px;
+ font-weight: normal;
+ opacity: 0.6;
+ line-height:25px;
+ padding: 0 5%;
+ color: #000000;
+}
+.fab{
+  font-size: 28px;
+  
+}

@@ -1,0 +1,26 @@
+.brand-name{
+  font-weight:500px !important;
+  font-size:2rem !important;
+  font-weight: 700 !important;
+}
+.bi{
+  color:#FFFFFF;
+}
+.navbar{
+  margin: 30px
+}
+#phone-nav-container{
+  background-color: #191919; 
+  font-family: 'Poppins', sans-serif;
+  
+  margin: 0 auto;
+  border-bottom: 0.01em solid rgba(151, 151, 151, .4);
+  
+  padding:10px 24px;
+}
+.navbar-toggler{
+  border: 1px solid transparent !important;
+}
+.nav-link{
+ font-size:1rem !important;
+}

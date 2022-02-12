@@ -2,6 +2,7 @@
  width: 100%;
  background-color:#101010;
   text-align: center;
+  color: #fff;
 }
 .footer-colored-line{
  width: 100px;
@@ -59,4 +60,5 @@
  display: inline-block;
  margin-right: 1.3rem;
  margin-bottom: 2rem;
+ color: white;
 }

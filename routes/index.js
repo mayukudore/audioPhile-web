@@ -5,5 +5,11 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Audiophile' });
 });
+router.get('/product', (req, res, next) => {
+  res.render('items');
+});
+router.get('/product/:id', (req, res, next) => {
+  res.render('product');
+})
 
 module.exports = router;

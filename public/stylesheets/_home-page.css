@@ -6,7 +6,7 @@
  background-color: #191919;
  height: 83vh;
  width:100%;
- background-image: url(/images/mobile/image-header.jpg);
+ background-image: url(/images/mobile1/image-header.jpg);
  background-size: cover;
  background-position: bottom center;
  background-repeat: no-repeat;
@@ -49,7 +49,7 @@
  padding: 1rem 3rem;
  
 }
-.homepage-button{
+.see-product-button{
  width: 160px;
  height:48px;
  border: 1px solid transparent;
@@ -195,7 +195,7 @@
 
 }
 .zx7-speaker-products{
- background-image: url(/images/mobile/image-speaker-zx7.jpg);
+ background-image: url(/images/mobile1/image-speaker-zx7.jpg);
  height: 40vh;
  background-position:center;
  background-repeat:no-repeat;

@@ -1,0 +1,108 @@
+extends layout
+
+block content
+    include _header
+    .checkout-outermost-container 
+        a.go-back-text(href='#') Go Back
+        .checkout-form-wrapper
+
+            form
+                .firstbox
+                    h3.checkout-text CHECKOUT 
+                    p.checkout-sub-text BILLING DETAILS 
+                    .label-container
+                        label(for='name') NAME
+                    .input-box
+                        input(type='email' id='name' name='name')
+
+                    .label-container
+                        label(for='password') Password
+                    .input-box
+                        input(type='password' id='password' name='password')
+                    .label-container
+                        label(for='phone') Phone Number
+                    .input-box
+                        input#phone(type='tel' name='phone')
+                    .shipping-info 
+                        p SHIPPING INFO
+                    .label-container
+                        label(for='address') Your Address 
+                    .input-box
+                        input(type='text' name='address' id='address')
+                    .label-container
+                        label(for='zip') ZIP Code
+                    .input-box
+                        input(type='number' name='zip' id='zip' pattern='[0-9]*' inputmode='numeric') 
+                    .label-container
+                        label(for='city') City
+                    .input-box
+                        input(type='text' name='city' id='city')
+                    .label-container
+                        label(for='country') Country
+                    .input-box
+                        input(type='text' name='country' id='country')  
+                    .Payment-info 
+                        p PAYMENT DETAILS 
+                    .input-box 
+                        input(type='radio' name='payment' id="e-money")
+                        label(for='e-money') e-money
+                    .input-box 
+                        input(type='radio' name='payment' id="cash")
+                        label(for='cash') Cash on Delivery
+                    .label-container
+                        label(for='e-money-num') e-Money Number
+                    .input-box
+                        input(type='number' name='e-money-num' id='e-money-num')
+                    .label-container
+                        label(for='e-money-pin') e-Money PIN
+                    .input-box
+                        input(type='number' name='e-money-pin' id='e-money-pin')
+                .second-box 
+                    h3.summary-header SUMMARY
+                    .row 
+                        .col-sm-6.col-4
+                            img(src='images/cart/image-xx99-mark-two-headphones.jpg')
+                        .col-sm-6.col-4
+                            h6 XX99 MK II 
+                            p $ 2,999
+                        .col-sm-6.col-4 
+                            p x1
+                    .row 
+                        .col-sm-6.col-4
+                            img(src='images/cart/image-xx59-headphones.jpg')
+                        .col-sm-6.col-4
+                            h6 XX99 MK II 
+                            p $ 2,999
+                        .col-sm-6.col-4 
+                            p x1
+                    .row 
+                        .col-sm-6.col-4
+                            img(src='images/cart/image-yx1-earphones.jpg')
+                        .col-sm-6.col-4
+                            h6 XX99 MK II 
+                            p $ 2,999
+                        .col-sm-6.col-4 
+                            p x1
+                    .row
+                        .col-sm-6.col-6 
+                            p TOTAL 
+                        .col-sm-6.col-6 
+                            p $ 5,396
+                    .row
+                        .col-sm-6.col-6 
+                            p TOTAL 
+                        .col-sm-6.col-6 
+                            p $ 5,396
+                    .row
+                        .col-sm-6.col-6 
+                            p TOTAL 
+                        .col-sm-6.col-6 
+                                p $ 5,396
+                    .row
+                        .col-sm-6.col-6 
+                            p TOTAL 
+                        .col-sm-6.col-6 
+                            p $ 5,396
+                button.submit(type="submit") CONTINUE & PAY
+
+    include _footer

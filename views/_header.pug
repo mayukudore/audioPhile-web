@@ -1,9 +1,65 @@
+#cart.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-dialog-scrollable.modal-lg
+    .modal-content.modal-box
+      
+      .modal-body
+        .container-fluid
+          .row.cart-modal-header.justify-content-between
+            .col-sm-6.col-9
+              h4.cart-text CART 
+                span (3)
+            .col-sm-6.col-3.ml-auto.p-2
+              a.remove-all(href='#') Remove all
+          .row
+            .col-sm-6.col-8.cart-images  
+              img(src='/images/cart/image-xx99-mark-two-headphones.jpg')
+              .cart-cost-container
+                h6.product-name-cart XX99 MK II 
+                h4.cost-of-product $2,999
+            .col-sm-6.col-4.cart-quantity
+              .increase-decrease-product
+                button.remove-item -
+                span.number-of-items 1
+                button.add-item +
+          .row
+            .col-sm-6.col-8.cart-images 
+              img(src='/images/cart/image-xx59-headphones.jpg')
+              .cart-cost-container
+                h6.product-name-cart XX59  
+                h4.cost-of-product $899
+            .col-sm-6.col-4.cart-quantity
+              .increase-decrease-product 
+                button.remove-item -
+                span.number-of-items 2
+                button.add-item +
+          .row
+            .col-sm-6.col-8.cart-images 
+              img(src='/images/cart/image-yx1-earphones.jpg')
+              .cart-cost-container
+                h6.product-name-cart YX1 
+                h4.cost-of-product $599
+            .col-sm-6.col-4.cart-quantity
+              .increase-decrease-product 
+                button.remove-item -
+                span.number-of-items 1
+                button.add-item +
+          .row
+            .col-sm-6.col-9.total-amount TOTAL
+
+            .col-sm-6.col-3 $5,396
+
+
+
+      .modal-footer.footer.box
+        .row
+          .col-sm-6.col-10
+            button.see-product-button.checkout-button-cart(type='button' data-bs-dismiss='modal') CHECKOUT
 header#phone-nav-container
  nav.navbar.navbar-expand-lg.phone-nav.navbar-dark
   button.navbar-toggler(type='button', data-toggle='collapse', data-bs-target='#navmenu' data-bs-toggle='collapse')
    span.navbar-toggler-icon.harmburger-menu 
   a.navbar-brand.brand-name(href='#') audiophile 
-  a.shopping-cart(href='#')
+  button.cart-button(type='button' data-bs-toggle='modal' data-bs-target='#cart')
    svg.bi.bi-cart(xmlns='http://www.w3.org/2000/svg' width='27' height='25' fill='currentColor' viewbox='0 0 16 16')
     path(d='M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z') 
   #navmenu.collapse.navbar-collapse.mt-2.mt-lg-0
@@ -16,3 +72,6 @@ header#phone-nav-container
       a.nav-link(href='#') SPEAKERS
      li.nav-item  
       a.nav-link(href='#') EARPHONES
+
+       
+  

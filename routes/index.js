@@ -11,5 +11,8 @@ router.get('/product', (req, res, next) => {
 router.get('/product/:id', (req, res, next) => {
   res.render('product');
 })
+router.get('/checkout', (req, res, next) => {
+  res.render('checkout');
+})
 
 module.exports = router;

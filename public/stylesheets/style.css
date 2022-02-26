@@ -5,6 +5,7 @@
 @import url('/stylesheets/_footer.css');
 @import url('/stylesheets/_product.css');
 @import url('/stylesheets/_add-to-cart.css');
+@import url('/stylesheets/checkout.css');
 html{
   
   box-sizing: border-box;

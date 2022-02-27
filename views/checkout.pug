@@ -13,96 +13,101 @@ block content
                     .label-container
                         label(for='name') NAME
                     .input-box
-                        input(type='email' id='name' name='name')
+                        input(type='email' id='name' name='name' placeholder='Alexei Ward')
 
                     .label-container
-                        label(for='password') Password
+                        label(for='email') Email Address
                     .input-box
-                        input(type='password' id='password' name='password')
+                        input(type='email' id='emmail' name='email' placeholder='alexei@mail.com')
                     .label-container
                         label(for='phone') Phone Number
                     .input-box
-                        input#phone(type='tel' name='phone')
+                        input#phone(type='tel' name='phone' placeholder='+1202-555-0136')
                     .shipping-info 
                         p SHIPPING INFO
                     .label-container
                         label(for='address') Your Address 
                     .input-box
-                        input(type='text' name='address' id='address')
+                        input(type='text' name='address' id='address' placeholder='1137 Williams Avenue')
                     .label-container
                         label(for='zip') ZIP Code
                     .input-box
-                        input(type='number' name='zip' id='zip' pattern='[0-9]*' inputmode='numeric') 
+                        input(type='number' name='zip' id='zip' pattern='[0-9]*' inputmode='numeric' placeholder='10001') 
                     .label-container
                         label(for='city') City
                     .input-box
-                        input(type='text' name='city' id='city')
+                        input(type='text' name='city' id='city' placeholder='New York')
                     .label-container
                         label(for='country') Country
                     .input-box
-                        input(type='text' name='country' id='country')  
-                    .Payment-info 
-                        p PAYMENT DETAILS 
-                    .input-box 
-                        input(type='radio' name='payment' id="e-money")
-                        label(for='e-money') e-money
-                    .input-box 
-                        input(type='radio' name='payment' id="cash")
-                        label(for='cash') Cash on Delivery
+                        input(type='text' name='country' id='country' placeholder='United States')  
+                    .payment-info 
+                        p.payment-details PAYMENT DETAILS 
+                        h5.payment-method Payment Method
+                    .input-box.eMoney
+                        .button-input  
+                            input(type='radio' name='payment' id="e-money")
+                        .button-label
+                            label(for='e-money') e-Money
+                    .input-box.cash-on-delivery
+                        .button-input  
+                            input(type='radio' name='payment' id="cash")
+                        .button-label
+                            label(for='cash') Cash on Delivery
                     .label-container
                         label(for='e-money-num') e-Money Number
                     .input-box
-                        input(type='number' name='e-money-num' id='e-money-num')
+                        input(type='number' name='e-money-num' id='e-money-num' placeholder='238521993')
                     .label-container
                         label(for='e-money-pin') e-Money PIN
                     .input-box
-                        input(type='number' name='e-money-pin' id='e-money-pin')
+                        input(type='number' name='e-money-pin' id='e-money-pin' placeholder='1239')
                 .second-box 
                     h3.summary-header SUMMARY
                     .row 
-                        .col-sm-6.col-4
+                        .col-sm-6.col-6.image-box-checkout
                             img(src='images/cart/image-xx99-mark-two-headphones.jpg')
-                        .col-sm-6.col-4
-                            h6 XX99 MK II 
-                            p $ 2,999
-                        .col-sm-6.col-4 
+                            .text-for-checkout-summary
+                                h6 XX99 MK II 
+                                p $ 2,999
+                        .col-sm-6.col-6.summary-amount-num  
                             p x1
                     .row 
-                        .col-sm-6.col-4
+                        .col-sm-6.col-6.image-box-checkout
                             img(src='images/cart/image-xx59-headphones.jpg')
-                        .col-sm-6.col-4
-                            h6 XX99 MK II 
-                            p $ 2,999
-                        .col-sm-6.col-4 
-                            p x1
+                            .text-for-checkout-summary
+                                h6 XX59 
+                                p $ 899
+                        .col-sm-6.col-6.summary-amount-num 
+                            p x2
                     .row 
-                        .col-sm-6.col-4
+                        .col-sm-6.col-8.image-box-checkout
                             img(src='images/cart/image-yx1-earphones.jpg')
-                        .col-sm-6.col-4
-                            h6 XX99 MK II 
-                            p $ 2,999
-                        .col-sm-6.col-4 
+                            .text-for-checkout-summary
+                                h6 YX1 
+                                p $ 599
+                        .col-sm-6.col-4.summary-amount-num  
                             p x1
                     .row
-                        .col-sm-6.col-6 
+                        .col-sm-6.col-6.summary-lower-texts 
                             p TOTAL 
-                        .col-sm-6.col-6 
+                        .col-sm-6.col-6.summary-shipping-cost 
                             p $ 5,396
                     .row
-                        .col-sm-6.col-6 
-                            p TOTAL 
-                        .col-sm-6.col-6 
-                            p $ 5,396
+                        .col-sm-6.col-6.summary-lower-texts 
+                            p SHIPPING 
+                        .col-sm-6.col-6.summary-shipping-cost 
+                            p $ 50
                     .row
-                        .col-sm-6.col-6 
-                            p TOTAL 
-                        .col-sm-6.col-6 
-                                p $ 5,396
-                    .row
-                        .col-sm-6.col-6 
-                            p TOTAL 
-                        .col-sm-6.col-6 
-                            p $ 5,396
-                button.submit(type="submit") CONTINUE & PAY
+                        .col-sm-6.col-6.summary-lower-texts 
+                            p VAT (INCLUDED) 
+                        .col-sm-6.col-6.summary-shipping-cost 
+                            p $ 1,076
+                    .row.summary.last.row
+                        .col-sm-6.col-6.summary-lower-texts 
+                            p GRAND TOTAL 
+                        .col-sm-6.col-6.grand-total 
+                            p $ 5,446
+                    button.submit.see-product-button.checkout-button-cart(type="submit") CONTINUE & PAY
 
     include _footer

@@ -2,8 +2,43 @@ extends layout
 
 block content
     include _header
+
+
     .checkout-outermost-container 
-        a.go-back-text(href='#') Go Back
+        
+
+        #checkoutModalConfirmation.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog.modal-dialog-centered
+                .modal-content.modal-biggest-container
+                    .modal-header.check-out-modal-header
+                        .circle-with-tick
+                            i.fa.fa-check.round-check-sign.fa-lg
+
+
+                    .modal-body.check-out-modal-body
+                        h3.checkout-modal-body-main-text THANK YOU FOR  YOUR ORDER 
+                        P.checkout-modal-confirmation-text You will receive an email confirmation shortly.
+                        .product-grandtotal-box 
+                            .image-price-quantity-variant.row 
+                                .col-8.imgage-variant 
+                                    img(src='/images/cart/image-xx99-mark-two-headphones.jpg')
+                                    .price-quantity-box 
+                                        h4.variant-name XX99 MK II 
+                                        p.price-of-product $ 2,999
+                                p.quantity-box-checkout-modal.col-4 x1
+                            p.the-ramaining-item-count and 2 other item(s)
+                        .the-grand-total-container 
+                            h3.grand-total-modal GRAND TOTAL 
+                            p.total-cost-modal $ 5,446
+                        
+
+
+
+                    .checkout-modal-footer
+                        .row
+                        
+                            button.col-12.check-out-modal-btn.submit.see-product-button(type='button') BACK TO HOME
+
         .checkout-form-wrapper
 
             form
@@ -108,6 +143,6 @@ block content
                             p GRAND TOTAL 
                         .col-sm-6.col-6.grand-total 
                             p $ 5,446
-                    button.submit.see-product-button.checkout-button-cart(type="submit") CONTINUE & PAY
+                    button.submit-checkout-last-button.see-product-button.checkout-button-cart(type='button' data-bs-toggle='modal' data-bs-target='#checkoutModalConfirmation') CONTINUE & PAY
 
     include _footer

@@ -181,9 +181,9 @@ input[type=number] {
   opacity: 0.5;
 
 }
-.submit{
-  margin-left: 15%;
-  margin-top: 6%;
+.submit-checkout-last-button{
+ width: 90%;
+ margin: 5% 5%;
 
 }
 .grand-total p{
@@ -200,3 +200,144 @@ input[type=number] {
   padding-bottom: 15px;
   padding-top: 20px;
 }
+/* Check-out Modal css */
+
+.modal-biggest-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.circle-with-tick{
+  margin-top: 15px;
+  margin-left: 5%;
+ width: 70px;
+ height: 70px;
+ border-radius: 50%;
+ background-color: #D87D4A;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+}
+.round-check-sign{
+  color: #FFFF;
+ }
+ .round-check-sign{
+   border-top: 1px solid transparent;
+ }
+ .check-out-modal-header{
+   border-bottom: 1px solid transparent;
+ }
+ .checkout-modal-body-main-text{
+   font-size: 24px;
+   font-weight: 700;
+   margin: 5px auto;
+   width: 90%;
+   letter-spacing: 1px;
+   padding-right: 120px;
+ }
+ .checkout-modal-confirmation-text{
+   font-size: 15px;
+   font-weight: 500;
+   opacity: 0.5;
+   margin-top: 20px;
+   margin-right: 5%;
+   margin-left: 5%;
+   width: 90%;
+   
+   
+ }
+ .product-grandtotal-box {
+   background-color: #f1f1f1;
+   border-radius: 7px 7px 0 0;
+    width: 90%;
+   margin: 0 auto;
+   
+
+ }
+ .imgage-variant img{
+   height: 60px;
+   display: block;
+  
+ }
+ .image-price-quantity-variant{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-top: 20px;
+   padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+  
+   
+ }
+ .imgage-variant {
+   display: flex;
+   flex-direction: row;
+   width: 60%;
+   gap: 30px;
+ }
+ .variant-name{
+   font-size: 15px;
+   font-weight: 700;
+   line-height: 25px;
+ }
+ .price-of-product{
+   font-size: 14px;
+   font-weight: 700;
+   opacity: 0.5;
+   line-height: 25px;
+
+ }
+ .quantity-box-checkout-modal{
+   font-size: 15px;
+   font-weight: 700;
+   text-align: center;
+   line-height: 25px;
+   opacity: .5;
+  
+   
+ }
+ .the-ramaining-item-count{
+   text-align: center;
+   width: 80%;
+   margin: auto;
+   border-top: 1px solid rgba(0, 0, 0,0.2);
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.5;
+  padding: 1rem 1rem;
+ }
+ .the-grand-total-container{
+   color: #fAf9f6;
+   background-color: #000; 
+   border-radius: 0 0 7px 7px;
+    width: 90%;
+   margin: 0 auto;
+   height: 120px;
+ }
+ .grand-total-modal{
+   font-size: 15px;
+   opacity: 0.5;
+   font-weight: 500;
+   line-height: 25px;
+   padding-left: 20px;
+   padding-top: 20px;
+ }
+ .total-cost-modal{
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 25px;
+   padding-left: 20px;
+   padding-bottom: 20px;
+ }
+ .check-out-modal-btn{
+   text-align: center;
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 18px;
+   margin: 20px auto;
+   width: 80%;
+   letter-spacing: 1px;
+ }

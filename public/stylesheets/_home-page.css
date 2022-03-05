@@ -294,3 +294,10 @@
   font-size: 28px;
   
 }
+
+@media only screen and (min-width: 600px) {
+.blackbackground-headphone-image{ 
+ background-image: url(/images/tablet-home/image-header.jpg)
+}
+
+}

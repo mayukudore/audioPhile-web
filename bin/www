@@ -16,7 +16,7 @@ const mongoose = require('mongoose');
  */
 const DB = process.env.DATABASE
 
-mongoose.connect(DB);
+mongoose.connect('mongodb+srv://Dore:RDA1rtCazWep78Rv@cluster0.po9yb.mongodb.net/AudioPhile?retryWrites=true&w=majority');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);

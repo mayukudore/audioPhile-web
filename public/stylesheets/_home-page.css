@@ -69,10 +69,14 @@
  margin-top:30px;
 }
 .product-preview img{
-  object-fit: contain;
- display: block;
- position: absolute
+   position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
 }
+
 
 .preview-containers{
  width:90%;

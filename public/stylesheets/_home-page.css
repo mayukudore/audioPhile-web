@@ -5,7 +5,7 @@
 
  background-color: #191919;
  height: 83vh;
- width:100vw;
+ width:100%;
  background-image: url(/images/mobile1/image-header.jpg);
  background-size: cover;
  background-position: bottom center;
@@ -220,7 +220,7 @@
  height: 50px;
  margin-left: 5%;
  font-weight:700;
- font-size: 16px;
+ font-size: 20px;
  border: 1px solid black;
  background-color:transparent;
 }

@@ -69,9 +69,12 @@
  margin-top:30px;
 }
 .product-preview img{
-  object-fit: contain;
- display: block;
- position: absolute
+   position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
 }
 
 .preview-containers{
@@ -90,23 +93,23 @@
 .headphones{
  width: auto;
  height:130px;
- bottom: 75%;
+ /* bottom: 75%;
  bottom: 84%;
- left: 38%;
+ left: 38%; */
  
 }
 .speakers{
  width: auto;
  height:170px;
- bottom: 48%;
- left:33%;
+ /* bottom: 48%;
+ left:33%; */
 
 }
 .earphones{
  width: auto;
  height: 150px;
- bottom: 15%;
- left: 35%;
+ /* bottom: 15%;
+ left: 35%; */
  
 }
 .preview-headers{

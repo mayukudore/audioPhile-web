@@ -25,7 +25,7 @@
 }
 .intro-text{
  font-weight: 400;
- font-size: 18px;
+ font-size: 14px;
  line-height:19px;
  letter-spacing:12px;
  opacity: 0.5;
@@ -42,7 +42,7 @@
  padding-bottom: 1rem;
 }
 .sub-text{
- font-size: 16px;
+ font-size: 15px;
  font-weight: 400;
  line-height: 30px;
  opacity:.65;
@@ -54,7 +54,7 @@
  height:48px;
  border: 1px solid transparent;
  background-color: #D87D4A;
- font-size: 16px;
+ font-size: 13px;
  font-weight: bold;
  line-height: 18px;
  color: #fff;
@@ -69,17 +69,14 @@
  margin-top:30px;
 }
 .product-preview img{
-   position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 1;
+  object-fit: contain;
+ display: block;
+ position: absolute
 }
 
 .preview-containers{
  width:90%;
- height: 80px;
+ height: 185px;
  margin-right: auto;
  margin-left: auto;
  margin-bottom: 7rem;
@@ -302,5 +299,8 @@
 .blackbackground-headphone-image{ 
  background-image: url(/images/tablet-home/image-header.jpg)
 }
-
+body{
+  width: 800px;
+  max-width: 800px;
+}
 }

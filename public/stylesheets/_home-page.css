@@ -4,10 +4,10 @@
 .blackbackground-headphone-image{
 
  background-color: #191919;
- height: 83vh;
+ height: 70vh;
  width:100%;
  background-image: url(/images/mobile1/image-header.jpg);
- background-size: contain;
+ background-size: cover;
  background-position: bottom center;
  background-repeat: no-repeat;
  display: flex;

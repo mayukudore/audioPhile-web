@@ -7,7 +7,7 @@
   color:#FFFFFF;
 }
 .navbar{
-  margin: 30px
+  padding-left: 5%;
 }
 #phone-nav-container{
   background-color: #191919; 
@@ -20,6 +20,7 @@
 }
 .navbar-toggler{
   border: 1px solid transparent !important;
+  margin-left: 2px !important;
 }
 .nav-link{
  font-size:1rem !important;
@@ -86,6 +87,14 @@
   background-color: #191919; 
   border: none
 }
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 650px){
+.navbar{
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr );
+  padding-left: 0;
+}
+.cart-button{
+  grid-column: 6 !important;
+}
 
 }

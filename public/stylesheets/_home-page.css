@@ -8,12 +8,12 @@
  width:100%;
  background-image: url(/images/mobile1/image-header.jpg);
  background-size: cover;
- background-position: bottom center;
+ background-position: center center;
  background-repeat: no-repeat;
  display: flex;
  justify-content: center;
  align-items: center;
- min-height: 70vh;
+ min-height: 600px;
 }
 .megatron-text-container {
  color: #fff;
@@ -134,7 +134,7 @@
  opacity: 1;
 }
 .home-page-product-action-page{
- height:90vh;
+ height:auto;
  width:90%;
  margin: 2rem auto;
  position:relative;
@@ -142,6 +142,7 @@
  text-align: center;
  background-color: #D87D4A;
  border-radius: 8px;
+ min-height: max-content;
 }
 .product-page-speaker{
  height:420px;
@@ -195,18 +196,22 @@
  font-size:13px;
  line-height: 17px;
  border: 1px solid transparent;
+ margin-bottom: 30px;
 
 }
 .zx7-speaker-products{
- background-image: url(/images/mobile1/image-speaker-zx7.jpg);
- height: 40vh;
- background-position:center;
+ background-image: url(/images/mobile-home/image-speaker-zx7.jpg);
+ height:auto;
+ background-position:center center;
  background-repeat:no-repeat;
  background-size: 100%;
  width:90%;
  margin:auto;
  object-fit: contain;
  border-radius: 8px;
+ min-height: 370px;
+ 
+ min-height: fit-content (320px);
 }
 .zx7-speaker{
  font-size:2rem;
@@ -214,9 +219,12 @@
  letter-spacing: 2px;
  font-weight:500;
  color:#000;
- padding-top:20%;
+ padding-top:25%;
  padding-left: 5%;
- padding-bottom:6%;
+ padding-bottom:4%;
+}
+.black-earphones-case-picture-tablet, .tab-pic{
+  display: none;
 }
 .zx7-button{
  width: 180px;
@@ -236,7 +244,7 @@
 }
 .yx1-earphone-card {
  background-color:#F1F1F1; 
- height: 230px;
+ height: 220px;
  width: 90%;
  margin:0 auto;
  border-radius: 9px;
@@ -300,7 +308,8 @@
 
 @media only screen and (min-width: 600px) {
 .blackbackground-headphone-image{ 
- background-image: url(/images/tablet-home/image-header.jpg)
+ background-image: url(/images/tablet-home/image-header.jpg);
+ 
 }
 body{
   width: 800px;
@@ -335,5 +344,64 @@ body{
 }
 .preview-containers{
   margin-bottom: 3rem;
+}
+.home-page-product-page{
+  font-size: 56px;
+  font-weight:700;
+  line-height: 58px;
+  letter-spacing: 2px;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+}
+.home-page-product-page-subtext {
+  padding: 30px 25%;
+}
+.zx7-speaker-products{
+  background-image: url(/images/tablet-home/image-speaker-zx7.jpg);
+  
+  
+}
+.container-for-black-earphone{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+  
+}
+.black-earphones-case-picture-tablet, .tab-pic{
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 30px;
+}
+.black-earphones-case-picture, .card-img-top{
+  display: none;
+}
+.yx1-earphone-card {
+ 
+  height:auto;
+  margin-top: 30px;
+  padding-top: 30px;
+  min-height: 100%;
+}
+.yx1{
+  background-color:#F1F1F1;
+  font-size: 13px;
+  line-height: 18px;
+ 
+
+}
+.yx1-header{
+  font-size:28px;
+  font-weight: bold;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+.card-title.content-header{
+  font-weight: 700;
+font-size: 40px;
+line-height: 44px;
+
 }
 }

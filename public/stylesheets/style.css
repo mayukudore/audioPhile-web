@@ -27,6 +27,7 @@ body {
 body{
   
   max-width: 800px;
+   overflow-x: hidden;
 }
 }
 

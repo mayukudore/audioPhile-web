@@ -5,7 +5,7 @@ block content
 
 
     .checkout-outermost-container 
-        
+
 
         #checkoutModalConfirmation.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
             .modal-dialog.modal-dialog-centered
@@ -30,13 +30,13 @@ block content
                         .the-grand-total-container 
                             h3.grand-total-modal GRAND TOTAL 
                             p.total-cost-modal $ 5,446
-                        
+
 
 
 
                     .checkout-modal-footer
                         .row
-                        
+
                             button.col-12.check-out-modal-btn.submit.see-product-button(type='button') BACK TO HOME
 
         .checkout-form-wrapper
@@ -45,18 +45,21 @@ block content
                 .firstbox
                     h3.checkout-text CHECKOUT 
                     p.checkout-sub-text BILLING DETAILS 
-                    .label-container
-                        label(for='name') NAME
-                    .input-box
-                        input(type='email' id='name' name='name' placeholder='Alexei Ward')
+                    .name-address-outer-container
+                        .name-address-container
+                            .label-container
+                                label(for='name') Name
+                            .input-box
+                                input(type='email' id='name' name='name' placeholder='Alexei Ward')
 
-                    .label-container
-                        label(for='email') Email Address
-                    .input-box
-                        input(type='email' id='emmail' name='email' placeholder='alexei@mail.com')
+                        .name-address-container    
+                            .label-container
+                                label(for='email') Email Address
+                            .input-box
+                                input(type='email' id='emmail' name='email' placeholder='alexei@mail.com')
                     .label-container
                         label(for='phone') Phone Number
-                    .input-box
+                    .input-box.phone-input-box
                         input#phone(type='tel' name='phone' placeholder='+1202-555-0136')
                     .shipping-info 
                         p SHIPPING INFO
@@ -64,39 +67,47 @@ block content
                         label(for='address') Your Address 
                     .input-box
                         input(type='text' name='address' id='address' placeholder='1137 Williams Avenue')
-                    .label-container
-                        label(for='zip') ZIP Code
-                    .input-box
-                        input(type='number' name='zip' id='zip' pattern='[0-9]*' inputmode='numeric' placeholder='10001') 
-                    .label-container
-                        label(for='city') City
-                    .input-box
-                        input(type='text' name='city' id='city' placeholder='New York')
+                    .name-address-outer-container
+                        .name-address-container
+                            .label-container
+                                label(for='zip') ZIP Code
+                            .input-box
+                                input(type='number' name='zip' id='zip' pattern='[0-9]*' inputmode='numeric' placeholder='10001') 
+                        .name-address-container
+                            .label-container
+                                label(for='city') City
+                            .input-box
+                                input(type='text' name='city' id='city' placeholder='New York')
                     .label-container
                         label(for='country') Country
-                    .input-box
+                    .input-box.phone-input-box
                         input(type='text' name='country' id='country' placeholder='United States')  
                     .payment-info 
-                        p.payment-details PAYMENT DETAILS 
+                        p.payment-details PAYMENT DETAILS
+                    .name-address-outer-container
                         h5.payment-method Payment Method
-                    .input-box.eMoney
-                        .button-input  
-                            input(type='radio' name='payment' id="e-money")
-                        .button-label
-                            label(for='e-money') e-Money
-                    .input-box.cash-on-delivery
-                        .button-input  
-                            input(type='radio' name='payment' id="cash")
-                        .button-label
-                            label(for='cash') Cash on Delivery
-                    .label-container
-                        label(for='e-money-num') e-Money Number
-                    .input-box
-                        input(type='number' name='e-money-num' id='e-money-num' placeholder='238521993')
-                    .label-container
-                        label(for='e-money-pin') e-Money PIN
-                    .input-box
-                        input(type='number' name='e-money-pin' id='e-money-pin' placeholder='1239')
+                        .input-box.eMoney
+                            .button-input  
+                                input(type='radio' name='payment' id="e-money")
+                            .button-label
+                                label(for='e-money') e-Money
+                    .phone-input-box.e-money-querry
+                        .input-box.cash-on-delivery
+                            .button-input  
+                                input(type='radio' name='payment' id="cash")
+                            .button-label
+                                label(for='cash') Cash on Delivery
+                    .name-address-outer-container
+                        .name-address-container
+                            .label-container
+                                label(for='e-money-num') e-Money Number
+                            .input-box
+                                input(type='number' name='e-money-num' id='e-money-num' placeholder='238521993')
+                        .name-address-container
+                            .label-container
+                                label(for='e-money-pin') e-Money PIN
+                            .input-box
+                                input(type='number' name='e-money-pin' id='e-money-pin' placeholder='1239')
                 .second-box 
                     h3.summary-header SUMMARY
                     .row 

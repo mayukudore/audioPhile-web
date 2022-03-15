@@ -2,45 +2,50 @@ extends layout
 
 block content
  include _header
- .product-container 
+ .product-container
   h1.product-page-header HEADPHONES
-  picture.product-image-container 
-   img.product-image(src='/images/product-xx99-mark-two-headphones/mobile/image-product.jpg')
-  h3.new-product-tag NEW PRODUCT 
-  h2.product-name XX99 MARK II HEADPHONES 
-  p.product-description.description1 The new XX99 Mark II headphones is the pinnacle of pristine audio. It defines your premium headphone experience by reproducinf the balance depth and precision of studio-quality sound.
-  button.see-product.see-product-button SEE PRODUCT
-  picture.product-image-container 
-   img.product-image(src='/images/product-xx99-mark-one-headphones/mobile/image-product.jpg')
-  h3.new-product-tag  
-  h2.product-name XX99 MARK I HEADPHONES 
-  p.product-description As the gold standard for headpphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.
-  button.see-product.see-product-button SEE PRODUCT
-  picture.product-image-container 
-   img.product-image(src='/images/product-xx59-headphones/mobile/image-product.jpg')
-  h3.new-product-tag 
-  h2.product-name XX59 HEADPHONES 
-  p.product-description Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.
-  button.see-product.see-product-button SEE PRODUCT
- .product-preview 
-   img.headphones(src='/images/product-xx99-mark-one-headphones/mobile/image-category-page-preview_ccexpress.png', alt='image of headphones')
-   .headphones-preview-container.preview-containers 
-    h2.headphones-preview-header.preview-headers HEADPHONES 
-    a.headphones-preview-link.preview-anchor(href='#') SHOP 
-     span &gt;
-   img.speakers(src='/images/product-zx9-speaker/mobile/image-product_ccexpress.png')  
-   .speakers-preview-container.preview-containers  
-    h2.speakers-preview-header.preview-headers SPEAKERS 
-    a.speakers-preview-link.preview-anchor(href='#') SHOP 
-     span &gt;
-   img.earphones(src='/images/product-yx1-earphones/mobile/image-category-page-preview_ccexpress (1).png')
-   .earphones-preview-container.preview-containers  
-    h2.earphones-preview-header.preview-headers EARPHONES 
-    a.earphones-preview-link.preview-anchor(href='#') SHOP 
-     span &gt;
- .card.home-page-man-picture 
-  img.card-img-top(src='/images/shared/mobile2/image-best-gear.jpg')
-  .card-body.conten-holder 
-   h2.card-title.content-header BRINGING YOU THE #[span BEST] AUDIO GEAR
-   p.card-text.content-text Located at the heart of New Your City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demostration rooms availabel for you to browse and experience a wide ranfe of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.
+  .product-holder-container
+    picture.product-image-container 
+    img.product-image.mobile-image-only(src='/images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg')
+    img.product-image.tab-image-only(src='/images/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg')
+    h3.new-product-tag NEW PRODUCT 
+    h2.product-name XX99 MARK II HEADPHONES 
+    p.product-description.description1 The new XX99 Mark II headphones is the pinnacle of pristine audio. It defines your premium headphone experience by reproducinf the balance depth and precision of studio-quality sound.
+    button.see-product.see-product-button SEE PRODUCT
+    picture.product-image-container 
+      img.product-image.mobile-image-only(src='/images/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg')
+      img.product-image.tab-image-only(src='/images/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg')
+    h3.new-product-tag  
+    h2.product-name XX99 MARK I HEADPHONES 
+    p.product-description As the gold standard for headpphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.
+    button.see-product.see-product-button SEE PRODUCT
+    picture.product-image-container 
+      img.product-image.mobile-image-only(src='/images/product-xx59-headphones/mobile/image-category-page-preview.jpg')
+      img.product-image.tab-image-only(src='/images/product-xx59-headphones/tablet/image-category-page-preview.jpg')
+    h3.new-product-tag 
+    h2.product-name XX59 HEADPHONES 
+    p.product-description Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.
+    button.see-product.see-product-button SEE PRODUCT
+  .product-preview 
+    img.headphones(src='/images/product-xx99-mark-one-headphones/mobile/image-category-page-preview_ccexpress.png', alt='image of headphones')
+    .headphones-preview-container.preview-containers 
+      h2.headphones-preview-header.preview-headers HEADPHONES 
+      a.headphones-preview-link.preview-anchor(href='#') SHOP 
+      span &gt;
+    img.speakers(src='/images/product-zx9-speaker/mobile/image-product_ccexpress.png')  
+    .speakers-preview-container.preview-containers  
+      h2.speakers-preview-header.preview-headers SPEAKERS 
+      a.speakers-preview-link.preview-anchor(href='#') SHOP 
+      span &gt;
+    img.earphones(src='/images/product-yx1-earphones/mobile/image-category-page-preview_ccexpress (1).png')
+    .earphones-preview-container.preview-containers  
+      h2.earphones-preview-header.preview-headers EARPHONES 122q
+      a.earphones-preview-link.preview-anchor(href='#') SHOP 
+      span &gt;
+  .card.home-page-man-picture 
+    img.card-img-top(src='/images/shared/mobile2/image-best-gear.jpg')
+    img.tab-pic(src='/images/shared/tablet/image-best-gear.jpg')
+    .card-body.conten-holder 
+    h2.card-title.content-header BRINGING YOU THE #[span BEST] AUDIO GEAR
+    p.card-text.content-text Located at the heart of New Your City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demostration rooms availabel for you to browse and experience a wide ranfe of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.
  include _footer

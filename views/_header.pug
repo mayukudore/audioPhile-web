@@ -4,42 +4,42 @@
       
       .modal-body
         .container-fluid
-          .row.cart-modal-header.justify-content-between
-            .col-sm-6.col-9
+          .row.cart-modal-header.justify-content-between.align-items-center
+            .col-sm-6.col-8
               h4.cart-text CART 
                 span (3)
-            .col-sm-6.col-3.ml-auto.p-2
+            .col-sm.col-4.ml-auto.p-2
               a.remove-all(href='#') Remove all
           .row
-            .col-sm-6.col-8.cart-images  
+            .col-sm.col-8.cart-images  
               img(src='/images/cart/image-xx99-mark-two-headphones.jpg')
               .cart-cost-container
                 h6.product-name-cart XX99 MK II 
                 h4.cost-of-product $2,999
-            .col-sm-6.col-4.cart-quantity
-              .increase-decrease-product
+            .col-sm.col-4.cart-quantity
+              .increase-decrease-product.cart-increase-product 
                 button.remove-item -
                 span.number-of-items 1
                 button.add-item +
           .row
-            .col-sm-6.col-8.cart-images 
+            .col-sm.col-8.cart-images 
               img(src='/images/cart/image-xx59-headphones.jpg')
               .cart-cost-container
                 h6.product-name-cart XX59  
                 h4.cost-of-product $899
-            .col-sm-6.col-4.cart-quantity
-              .increase-decrease-product 
+            .col-sm.col-4.cart-quantity
+              .increase-decrease-product.cart-increase-product  
                 button.remove-item -
                 span.number-of-items 2
                 button.add-item +
           .row
-            .col-sm-6.col-8.cart-images 
+            .col-sm.col-8.cart-images 
               img(src='/images/cart/image-yx1-earphones.jpg')
               .cart-cost-container
                 h6.product-name-cart YX1 
                 h4.cost-of-product $599
-            .col-sm-6.col-4.cart-quantity
-              .increase-decrease-product 
+            .col-sm.col-4.cart-quantity
+              .increase-decrease-product.cart-increase-product 
                 button.remove-item -
                 span.number-of-items 1
                 button.add-item +

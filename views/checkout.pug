@@ -8,7 +8,7 @@ block content
 
 
         #checkoutModalConfirmation.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
-            .modal-dialog.modal-dialog-centered
+            .modal-dialog.modal-dialog-centered.tablet-size
                 .modal-content.modal-biggest-container
                     .modal-header.check-out-modal-header
                         .circle-with-tick
@@ -18,18 +18,19 @@ block content
                     .modal-body.check-out-modal-body
                         h3.checkout-modal-body-main-text THANK YOU FOR  YOUR ORDER 
                         P.checkout-modal-confirmation-text You will receive an email confirmation shortly.
-                        .product-grandtotal-box 
-                            .image-price-quantity-variant.row 
-                                .col-8.imgage-variant 
-                                    img(src='/images/cart/image-xx99-mark-two-headphones.jpg')
-                                    .price-quantity-box 
-                                        h4.variant-name XX99 MK II 
-                                        p.price-of-product $ 2,999
-                                p.quantity-box-checkout-modal.col-4 x1
-                            p.the-ramaining-item-count and 2 other item(s)
-                        .the-grand-total-container 
-                            h3.grand-total-modal GRAND TOTAL 
-                            p.total-cost-modal $ 5,446
+                        .the-product-image-container
+                            .product-grandtotal-box 
+                                .image-price-quantity-variant.row 
+                                    .col-8.imgage-variant 
+                                        img(src='/images/cart/image-xx99-mark-two-headphones.jpg')
+                                        .price-quantity-box 
+                                            h4.variant-name XX99 MK II 
+                                            p.price-of-product $ 2,999
+                                    p.quantity-box-checkout-modal.col-4 x1
+                                p.the-ramaining-item-count and 2 other item(s)
+                            .the-grand-total-container 
+                                h3.grand-total-modal GRAND TOTAL 
+                                p.total-cost-modal $ 5,446
 
 
 

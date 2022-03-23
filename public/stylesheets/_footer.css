@@ -88,3 +88,17 @@
     justify-content:space-between;
   }
 }
+@media only screen and (min-width: 992px){
+  .desktop-footer-layout{
+    display: flex;
+    justify-content:space-between;
+  }
+  .footer-nav-links{
+    margin-top: 0;
+    padding-top: 1rem;
+  }
+  .footer-sub-text{
+    margin-left: 0;
+    width: 50%;
+  }
+}
